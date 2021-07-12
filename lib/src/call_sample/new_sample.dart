@@ -1,3 +1,4 @@
+import 'dart:ffi';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -35,7 +36,7 @@ class FullScreenPage extends StatelessWidget {
                 right: 0,
                 child: Container(
                   alignment: Alignment.topCenter,
-                  height: Get.height,
+                  height: Get.height + Get.statusBarHeight,
                   width: 40,
                   color: Color(0x55000000),
                   child: InkWell(
